@@ -1,11 +1,8 @@
 FROM phidata/python:3.9.12
-LABEL maintainer="Ashpreet Bedi <ashpreet@phidata.com>"
 
-ARG USER=assistant
+ARG USER=backend
 ARG HOME_DIR=${USER_LOCAL_DIR}/${USER}
 ENV HOME_DIR=${HOME_DIR}
-# Add HOME_DIR to PYTHONPATH
-ENV PYTHONPATH="${HOME_DIR}:${PYTHONPATH}"
 
 # Create user and home directory
 RUN groupadd -g 61000 ${USER} \
@@ -14,7 +11,7 @@ RUN groupadd -g 61000 ${USER} \
 COPY . ${HOME_DIR}
 # Install pinned requirements
 RUN pip install -r ${HOME_DIR}/requirements.txt
-# Install package for the `api` cli
+# Install package for the `app` cli
 RUN pip install ${HOME_DIR}
 
 USER ${USER}

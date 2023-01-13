@@ -1,10 +1,10 @@
 [project]
-name = "app"
+name = "backend"
 version = "0.1.0"
 requires-python = ">3.7"
 readme = "README.md"
 authors = [
-  {name = "Ashpreet Bedi", email = "ashpreet@phidata.com"}
+  {name = "Team", email = "team@team.com"}
 ]
 
 dependencies = [

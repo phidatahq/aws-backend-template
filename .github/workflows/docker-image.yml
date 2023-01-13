@@ -31,4 +31,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKERHUB_REPO }}/assistant:1.0.0
+          tags: ${{ secrets.DOCKERHUB_REPO }}/aws-backend:0.1.0
