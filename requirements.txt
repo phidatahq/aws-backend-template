@@ -40,8 +40,8 @@ oauthlib==3.2.2
 packaging==23.0
 pathspec==0.10.3
 pendulum==2.1.2
-phidata==1.0.0.dev6
-phiterm==1.0.0.dev6
+phidata==1.1.0
+phiterm==1.1.0
 platformdirs==2.6.2
 pluggy==1.0.0
 pre-commit==2.21.0
